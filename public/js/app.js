@@ -1949,9 +1949,72 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'randevuform-component',
+  data: function data() {
+    return {
+      name_surname: '',
+      email: '',
+      phone: '',
+      text: '',
+      date: new Date().toISOString().slice(0, 10)
+    };
+  },
   mounted: function mounted() {
-    console.log('Ben geldim');
+    console.log('Randevu Componenti Çalıştı');
+  },
+  methods: {
+    store: function store() {
+      console.log('Tıklandı');
+    }
   }
 });
 
@@ -37648,15 +37711,202 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.name_surname,
+                expression: "name_surname"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text", placeholder: "Ad Soyad" },
+            domProps: { value: _vm.name_surname },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.name_surname = $event.target.value
+              }
+            }
+          })
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.email,
+                expression: "email"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text", placeholder: "Email" },
+            domProps: { value: _vm.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.email = $event.target.value
+              }
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.phone,
+                expression: "phone"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "text", placeholder: "Telefon" },
+            domProps: { value: _vm.phone },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.phone = $event.target.value
+              }
+            }
+          })
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.date,
+                expression: "date"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: { type: "date" },
+            domProps: { value: _vm.date },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.date = $event.target.value
+              }
+            }
+          })
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "row mt-3" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("div", { staticClass: "form-group" }, [
+          _c("textarea", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.text,
+                expression: "text"
+              }
+            ],
+            staticClass: "form-control",
+            domProps: { value: _vm.text },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.text = $event.target.value
+              }
+            }
+          })
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c(
+          "button",
+          { staticClass: "btn btn-success", on: { click: _vm.store } },
+          [_vm._v(" Randevu Al ")]
+        )
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [_vm._v("\n        test\n    ")])
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col" }, [
+        _c("ul", { staticClass: "select-time-ul" }, [
+          _c("li", { staticClass: "select-time" }, [
+            _c("input", { attrs: { type: "radio" } }),
+            _vm._v(" "),
+            _c("span", [_vm._v(" 10:00 - 11:00 ")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "select-time" }, [
+            _c("input", { attrs: { type: "radio" } }),
+            _vm._v(" "),
+            _c("span", [_vm._v(" 11:00 - 12:00 ")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "select-time" }, [
+            _c("input", { attrs: { type: "radio" } }),
+            _vm._v(" "),
+            _c("span", [_vm._v(" 13:00 - 14:00 ")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "select-time" }, [
+            _c("input", { attrs: { type: "radio" } }),
+            _vm._v(" "),
+            _c("span", [_vm._v(" 14:00 - 15:00 ")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "select-time" }, [
+            _c("input", { attrs: { type: "radio" } }),
+            _vm._v(" "),
+            _c("span", [_vm._v(" 15:00 - 16:00 ")])
+          ]),
+          _vm._v(" "),
+          _c("li", { staticClass: "select-time" }, [
+            _c("input", { attrs: { type: "radio" } }),
+            _vm._v(" "),
+            _c("span", [_vm._v(" 16:00 - 17:00 ")])
+          ])
+        ])
+      ])
     ])
   }
 ]

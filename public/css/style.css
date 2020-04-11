@@ -1,0 +1,13 @@
+.select-time-ul{
+    margin: 0;
+    padding: 0;
+}
+.select-time{
+    padding: 10px;
+    list-style-type: none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 3px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+
+}
